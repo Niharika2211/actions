@@ -1,0 +1,14 @@
+name: My First WorkFlow
+on: push
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome message
+          run: echo "Welcome to Github Actions"
+        - name: Checkout the Repo
+          uses: actions/checkout@v4
+        - name: List the files
+          run: ls -a
+        - name: read the file
+          run:  cat README.md
