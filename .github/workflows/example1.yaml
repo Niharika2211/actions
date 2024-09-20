@@ -9,6 +9,6 @@ jobs:
         - name: Checkout the Repo
           uses: actions/checkout@v4
         - name: List the files
-          run: ls -ba
+          run: ls ba
         - name: read the file
           run:  cat README.md
